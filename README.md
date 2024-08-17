@@ -1,5 +1,5 @@
 # JS-Practice-from-W3School
-This repository contains my JavaScript practice exercises, examples as I go through the tutorials and exercises from [W3Schools](https://www.w3schools.com/js/).
+This repository contains my JavaScript practice exercises, examples and notes as I go through the tutorials and exercises from [W3Schools](https://www.w3schools.com/js/).
 
 ## About
 
