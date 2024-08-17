@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation using try-throw-catch-finally</title>
+</head>
+<body>
+  <h3>Input the field:</h3>
+  <p>Enter number between 5 to 10</p>
+
+  <form>
+    <input type="text" id="demo">
+    <input type="submit" value="Polty" id="button1">
+  </form>
+  <div id="ho"></div>
+</body>
+<script>
+  let buttonValue = document.querySelector('#button1')
+  
+  const label = document.getElementById('ho')
+  label.innerHTML = ""
+  buttonValue.addEventListener('click', () => {
+    let val = document.getElementById('demo').value
+    try
+    {
+      if(val == "") throw "is empty."
+      if(isNaN(val)) throw "is not a number."
+      val = Number(val)
+      if(val<5) throw "is low"
+      else if(val>10) throw "is high"
+    }
+    catch(sms){
+      label.innerHTML = "Number " + sms
+    }
+  });
+</script>
+</html>
